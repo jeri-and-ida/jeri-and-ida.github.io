@@ -1,1 +1,32 @@
-Hello :)
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="index.css">
+		<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+		<script src="index.js"></script>
+		<title>Jeri And Ida</title>
+	</head>
+	<body>
+		<audio loop id="sound">
+			<source
+				src="assets/Mice On Venus (8 Bit Version).mp3"
+				type="audio/mpeg">
+			&#x1f507;
+		</audio>
+
+		<div id="clickme-container">
+			<span id="clickme-link" onclick="clickmeAction()">
+				Click Me
+			</span>
+		</div>
+		
+		<div id="curtain-plane" style="display: none"></div>
+		
+		<div id="main-container" style="display: none">
+			<span id="main-image-halo"></span>
+			<img id="main-image" src="assets/main.png">
+			<br/>
+			<span id="main-text" class="hidden"></span>
+		</div>
+	</body>
+</html>
