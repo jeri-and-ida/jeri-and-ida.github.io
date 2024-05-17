@@ -68,21 +68,11 @@ body {
 #main-container {
 	position: fixed;
 	z-index: 3;
-
-	left: calc(50% - 25vmin);
-
-	width: 50vmin;
-
-	bottom: 10vmin;
 }
 
 
 #main-image {
 	position: fixed;
-
-	bottom: 25vmin;
-
-	width: 50vmin;
 
 	image-rendering: pixelated;
 }
@@ -90,12 +80,6 @@ body {
 #main-image-halo {
 	position: fixed;
 	z-index: 4;
-
-	width: 50vmin;
-	height: 50vmin;
-
-	left: calc(50% - 42vmin);
-	bottom: 42vmin;
 
 	border-radius: 50%;
 
@@ -137,4 +121,56 @@ body {
 
 #main-text.hidden::after {
 	background: var(--background-color);
+}
+
+
+
+@media (orientation: landscape) {
+	#main-container {
+		width: 50vmin;
+
+		left: calc(50% - 25vmin);
+		bottom: 10vmin;
+	}
+
+
+	#main-image {
+		width: 50vmin;
+
+		bottom: 25vmin;
+	}
+
+
+	#main-image-halo {
+		width: 50vmin;
+		height: 50vmin;
+	
+		left: calc(50% - 42vmin);
+		bottom: 42vmin;	
+	}
+}
+
+@media (orientation: portrait) {
+	#main-container {
+		width: 50vmin;
+
+		left: calc(50% - 25vmin);
+		top: 100vmin;
+	}
+
+
+	#main-image {
+		height: 50vmin;
+
+		top: 40vmin;
+	}
+
+
+	#main-image-halo {
+		width: 50vmin;
+		height: 50vmin;
+	
+		left: calc(50% - 40vmin);
+		top: 22vmin;	
+	}
 }
